@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import '@fontsource/roboto';
+import '@fontsource/raleway';
+import ThemeContext from './context/theme';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeContext>
+      <App />
+    </ThemeContext>
   </React.StrictMode>,
   document.getElementById('root')
 );
