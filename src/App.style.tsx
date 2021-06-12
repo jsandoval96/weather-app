@@ -72,4 +72,7 @@ export default makeStyles((theme: Theme) => ({
     zIndex: theme.zIndex.drawer + 1,
     color: '#fff',
   },
+  select: {
+    margin: '0 20px'
+  }
 }));
