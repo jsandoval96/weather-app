@@ -5,10 +5,12 @@ describe('<SearchField />', () => {
   const onSubmitMock = jest.fn();
   const onSubmitLocationMock = jest.fn();
   const value = 'Santiago';
+  const error = false;
+  const errorMessage = 'prueba error';
   let component: RenderResult;
 
   beforeEach(() => {
-    component = render(<SearchField defaultValue={value} onSubmit={onSubmitMock} onSubmitLocation={onSubmitLocationMock} />);
+    component = render(<SearchField defaultValue={value} onSubmit={onSubmitMock} onSubmitLocation={onSubmitLocationMock} error={error} errorMessage={errorMessage} placeholder="placeholder"/>);
   });
 
   test('Should pass a location to test input field', () => {
