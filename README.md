@@ -1,4 +1,6 @@
 # Weather App - client only
+
+### Live: [https://jsandoval96.github.io/weather-app](https://jsandoval96.github.io/weather-app)
 ## Tools:
 
 * React
