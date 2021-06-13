@@ -8,12 +8,13 @@ export default makeStyles((theme: Theme) => ({
   },
   firstContent: {
     background: theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light,
+    borderRight: theme.palette.type !== 'dark' ? '1px solid #eeeeee' : 'none',
     [theme.breakpoints.down('xs')]: {
       height: '100vh',
     },
   },
   secondContent: {
-    background: theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.light,
+    background: theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.primary.light,
   },
   weatherImg: {
     backgroundRepeat: 'no-repeat',
@@ -52,7 +53,8 @@ export default makeStyles((theme: Theme) => ({
   locationText: {
     display: 'flex',
     justifyContent: 'center',
-    fontSize: '1.5rem'
+    fontSize: '1.5rem',
+    textTransform: 'capitalize'
   },
   cardWeatherContainer: {
     padding: '1rem',

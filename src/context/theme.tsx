@@ -22,7 +22,7 @@ const ThemeContext = ({ children }: ThemeContextProps) => {
       primary: {
         light: '#FFF',
         main: '#1D213A',
-        dark: '#1D213A'
+        dark: '#1D213A',
       },
       secondary: {
         light: '#EBEBEB',

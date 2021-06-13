@@ -6,6 +6,9 @@ interface SearchFieldProps {
   defaultValue: string;
   onSubmit: (val: string) => void;
   onSubmitLocation: () => void;
+  error: boolean;
+  errorMessage: string;
+  placeholder: string;
 }
 
 const useStyles = makeStyles({
@@ -17,7 +20,7 @@ const useStyles = makeStyles({
   },
 });
 
-const SearchField = ({ defaultValue, onSubmit, onSubmitLocation }: SearchFieldProps) => {
+const SearchField = ({ defaultValue, onSubmit, onSubmitLocation, error, errorMessage, placeholder }: SearchFieldProps) => {
   const classes = useStyles();
   const [location, setLocation] = useState<string>(defaultValue);
 
@@ -25,16 +28,18 @@ const SearchField = ({ defaultValue, onSubmit, onSubmitLocation }: SearchFieldPr
     <TextField 
       name="email"
       variant="outlined"
-      placeholder="Mi Ciudad..."
+      placeholder={placeholder}
       value={location}
       onChange={(e) => setLocation(e.target.value)}
       fullWidth
       size="small"
+      error={error}
+      helperText={error && errorMessage}
       className={classes.input}
       InputProps={{
         endAdornment: (
           <InputAdornment position="end">
-            <IconButton size="small" onClick={() => onSubmit(location)} role="submit" >
+            <IconButton size="small" onClick={() => location && onSubmit(location)} role="submit" >
               <Search />
             </IconButton>
             <IconButton size="small" onClick={onSubmitLocation} role="location" >

@@ -10,15 +10,19 @@ interface DailyWeatherCardProps {
 
 const useStyles = makeStyles((theme: Theme) => ({
   container: {
-    background: theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light,
+    background: theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light
   },
   date: {
     fontFamily: 'Raleway',
     textAlign: 'center'
   },
   temp: {
+    margin: '15px 0 0',
     textAlign: 'center',
     fontFamily: 'Raleway',
+  },
+  img: {
+    maxHeight: '80px',
   }
 }));
 
@@ -26,12 +30,12 @@ const DailyWeatherCard = ({ date, img, minTemp, maxTemp, tempType }: DailyWeathe
   const classes = useStyles();
 
   return (
-    <Box py={1} borderRadius={3} className={classes.container}>
+    <Box py={1} borderRadius={3} className={classes.container} boxShadow="2">
       <Box className={classes.date}>
         {date}
       </Box>
       <Box display="flex" justifyContent="center">
-        <img src={img} alt="weather"></img>
+        <img src={img} alt="weather" className={classes.img}></img>
       </Box>
       <Box display="flex">
         <Box width="50%" mb={1} className={classes.temp}>{minTemp}°{tempType}</Box>

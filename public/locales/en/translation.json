@@ -1,0 +1,11 @@
+{
+  "weeklyWeather": "Weekly Weather",
+  "todaysHightlights": "Today's hightlights",
+  "windStatus": "Wind status",
+  "humidity": "Humidity",
+  "visibility": "Visibility",
+  "airPressure": "Air Pressure",
+  "unit": "Unit",
+  "city": "City",
+  "errorSearch": "The location was not found"
+}

@@ -36,11 +36,11 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const MiniCard = ({ title, value, type, children }: MiniCardProps) => {
+const MiniCard = ({ title, value = 0, type, children }: MiniCardProps) => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.container} py={1} borderRadius={3}>
+    <Box className={classes.container} py={1} borderRadius={3} boxShadow="2">
       <Box className={classes.title}>
         {title}
       </Box>
