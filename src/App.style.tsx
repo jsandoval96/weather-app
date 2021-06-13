@@ -16,15 +16,21 @@ export default makeStyles((theme: Theme) => ({
   secondContent: {
     background: theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.primary.light,
   },
-  weatherImg: {
+  weatherImgContainer: {
+    background: theme.palette.primary.dark
+  },
+  weatherImgBackground: {
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'contain',
     backgroundPosition: 'center',
+    position: 'absolute',
+    padding: '20px 0',
     width: '100%',
-    opacity: '0.1'
+    height: '100%',
+    opacity: '.1'
   },
-  weatherIcon: {
-    position: 'absolute'
+  weatherImg: {
+    margin: '20px 0'
   },
   weatherCurrentTemp: {
     fontFamily: 'Raleway',

@@ -21,8 +21,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     textAlign: 'center',
     fontFamily: 'Raleway',
   },
+  imgContainer: {
+    background: theme.palette.type === 'light' ? theme.palette.primary.dark : 'inherit'
+  },
   img: {
     maxHeight: '80px',
+    margin: '10px 0'
   }
 }));
 
@@ -34,7 +38,7 @@ const DailyWeatherCard = ({ date, img, minTemp, maxTemp, tempType }: DailyWeathe
       <Box className={classes.date}>
         {date}
       </Box>
-      <Box display="flex" justifyContent="center">
+      <Box display="flex" justifyContent="center" className={classes.imgContainer}>
         <img src={img} alt="weather" className={classes.img}></img>
       </Box>
       <Box display="flex">

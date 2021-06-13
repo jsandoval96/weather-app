@@ -89,9 +89,9 @@ const App = () => {
           <Box px={6} py={3} display="flex">
             <SearchField defaultValue="" onSubmit={setLocation} onSubmitLocation={getCurrentLocation} error={error} errorMessage={t('errorSearch')} placeholder={t('city')}/>
           </Box>
-          <Box display="flex" position="relative" justifyContent="center">
-            <img src={weatherBackground} alt="Weather" className={classes.weatherImg}></img>
-            {currentWeather && <img src={weatherImg} alt="weather" className={classes.weatherIcon}></img>}
+          <Box display="flex" position="relative" justifyContent="center" className={classes.weatherImgContainer}>
+            <img src={weatherBackground} alt="Weather" className={classes.weatherImgBackground}></img>
+            {currentWeather && <img src={weatherImg} alt="weather" className={classes.weatherImg}></img>}
           </Box>
           <Box display="flex" justifyContent="center" alignItems="center">
             <h2 className={classes.weatherCurrentTemp}>{weatherTemp}</h2>
