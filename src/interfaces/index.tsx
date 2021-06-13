@@ -3,6 +3,7 @@ export type CurrentWeatherData  = {
   humidity: number;
   wind_speed: number;
   wind_deg: number;
+  dew_point: number;
   weather: [
     {
       id: number;

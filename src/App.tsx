@@ -34,6 +34,7 @@ const App = () => {
   const weatherDate = currentWeather && formatDate(currentWeather.dt || 0, 'long', lang);
   const weatherWindSpeed = currentWeather && unit === 'metric' ? convertMsToKmh(currentWeather.wind_speed) : currentWeather?.wind_speed;
   const weatherWindDirection = currentWeather && windDgToDirection(currentWeather.wind_deg);
+  const weatherAtmosphericTemp = currentWeather && unit !== 'metric' ? Math.round(currentWeather.dew_point) : currentWeather?.dew_point;
   const sliderMarks = [{ value: 0, label: '0%' }, { value: 50, label: '50%' }, { value: 100, label: '100%' }];
   const units = ['standart', 'metric', 'imperial'];
   const tempUnits = {
@@ -179,6 +180,9 @@ const App = () => {
           </Grid>
           <Grid item xs={12} md={6} className={classes.cardWeatherContainer}>
             <MiniCard title={t('airPressure')} value={currentWeather?.pressure} type={'hPa'} />
+          </Grid>
+          <Grid item xs={12} md={6} className={classes.cardWeatherContainer}>
+            <MiniCard title={t('atmosphericTemperature')} value={weatherAtmosphericTemp} type={'°'+tempUnits[unit]} />
           </Grid>
         </Grid>
       </Grid>

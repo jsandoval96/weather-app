@@ -5,6 +5,7 @@
   "humidity": "Humedad",
   "visibility": "Visibilidad",
   "airPressure": "Presión del aire",
+  "atmosphericTemperature": "Temperatura atmosférica",
   "unit": "Unidad",
   "city": "Ciudad",
   "errorSearch": "La ubicación ingresada no fue encontrada"
