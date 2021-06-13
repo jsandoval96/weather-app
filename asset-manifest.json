@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/weather-app/static/css/main.73a43c6e.chunk.css",
+    "main.js": "/weather-app/static/js/main.2c98ee97.chunk.js",
+    "main.js.map": "/weather-app/static/js/main.2c98ee97.chunk.js.map",
+    "runtime-main.js": "/weather-app/static/js/runtime-main.434c1d67.js",
+    "runtime-main.js.map": "/weather-app/static/js/runtime-main.434c1d67.js.map",
+    "static/css/2.70d59b45.chunk.css": "/weather-app/static/css/2.70d59b45.chunk.css",
+    "static/js/2.518d6f97.chunk.js": "/weather-app/static/js/2.518d6f97.chunk.js",
+    "static/js/2.518d6f97.chunk.js.map": "/weather-app/static/js/2.518d6f97.chunk.js.map",
+    "static/js/3.a072091f.chunk.js": "/weather-app/static/js/3.a072091f.chunk.js",
+    "static/js/3.a072091f.chunk.js.map": "/weather-app/static/js/3.a072091f.chunk.js.map",
+    "index.html": "/weather-app/index.html",
+    "static/css/2.70d59b45.chunk.css.map": "/weather-app/static/css/2.70d59b45.chunk.css.map",
+    "static/css/main.73a43c6e.chunk.css.map": "/weather-app/static/css/main.73a43c6e.chunk.css.map",
+    "static/js/2.518d6f97.chunk.js.LICENSE.txt": "/weather-app/static/js/2.518d6f97.chunk.js.LICENSE.txt",
+    "static/media/Clear.png": "/weather-app/static/media/Clear.6e4f36b6.png",
+    "static/media/Cloud-background.f88244c2.png": "/weather-app/static/media/Cloud-background.f88244c2.png",
+    "static/media/LightCloud.png": "/weather-app/static/media/LightCloud.edc43777.png",
+    "static/media/Shower.png": "/weather-app/static/media/Shower.ea1e199a.png",
+    "static/media/Sleet.png": "/weather-app/static/media/Sleet.6ef96c5a.png",
+    "static/media/getFetch.cjs": "/weather-app/static/media/getFetch.582d29c4.cjs",
+    "static/media/index.css": "/weather-app/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.434c1d67.js",
+    "static/css/2.70d59b45.chunk.css",
+    "static/js/2.518d6f97.chunk.js",
+    "static/css/main.73a43c6e.chunk.css",
+    "static/js/main.2c98ee97.chunk.js"
+  ]
+}
